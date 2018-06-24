@@ -4,7 +4,7 @@ import countriesData from '../data/countries.json';
 const initialState = {
 	countries: countriesData,
 	selectedCountry: {},
-	visibleCountries: countriesData
+	visibleCountries: []
 };
 
 const countriesReducer = function (state = initialState, action) {
@@ -27,7 +27,7 @@ const countriesReducer = function (state = initialState, action) {
 
         case SET_CONTINENT:
         	const continentCountries = state.countries.filter(country => country.continent === action.name);
-        	return Object.assign({}, state, {visibleCountries: continentCountries});
+            return Object.assign({}, state, {visibleCountries: continentCountries});
 	}
 
 	return state;

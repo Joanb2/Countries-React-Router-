@@ -11,7 +11,7 @@ const Navigation = props => (
                     <Link className="navbar-brand" to="/">Countries.js</Link>
                 </div>
                 <div>
-                    <ul className="nav navbar-nav">
+                    <ul>
                         <li><Link to="/countries">Countries</Link></li>
                         <li><Link to="/continents">Continents</Link></li>
                         <li><Link to="/contact">Contact</Link></li>
